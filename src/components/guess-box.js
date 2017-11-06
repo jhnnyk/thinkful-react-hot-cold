@@ -27,7 +27,7 @@ export default class GuessBox extends React.Component {
           handleSubmit={input => this.formSubmit(input)}
         />
         <GuessCount />
-        <GuessHistory />
+        <GuessHistory history={this.state.history} />
       </div>
     )
   }

@@ -2,12 +2,13 @@ import React from 'react'
 
 export default class GuessHistory extends React.Component {
   render () {
+    const guesses = this.props.history.map((guess, index) => {
+      return <div key={index}>{guess.input}</div>
+    })
+
     return (
       <div>
-        <div>53</div>
-        <div>45</div>
-        <div>69</div>
-        <div>73</div>
+        {guesses}
       </div>
     )
   }
