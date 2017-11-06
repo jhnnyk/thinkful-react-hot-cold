@@ -4,7 +4,7 @@ export default class GuessCount extends React.Component {
   render () {
     return (
       <div>
-        <h3>Guess #5!</h3>
+        <h3>Guess #{this.props.count}!</h3>
       </div>
     )
   }
