@@ -1,11 +1,38 @@
 import React from 'react'
 
 export default class GuessForm extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      text: ''
+    }
+  }
+
+  setText (text) {
+    this.setState({
+      text
+    })
+  }
+
+  onSubmit (e) {
+    e.preventDefault()
+    if (this.state.text && this.props.handleSubmit) {
+      this.props.handleSubmit(this.state.text)
+    }
+    this.setState({
+      text: ''
+    })
+  }
+
   render () {
     return (
-      <form>
-        <input type='text' />
-        <button>Guess</button>
+      <form onSubmit={e => this.onSubmit(e)}>
+        <input type='text'
+          value={this.state.text}
+          onChange={e => this.setText(e.target.value)}
+        />
+        <button type='submit'>Guess</button>
       </form>
     )
   }
