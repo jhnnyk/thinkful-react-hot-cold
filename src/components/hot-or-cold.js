@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import Title from './title'
+import GuessBox from './guess-box'
 
 class HotorCold extends Component {
   render () {
     return (
       <div>
-        <h1>Hello world!</h1>
+        <Title />
+        <GuessBox />
       </div>
     )
   }
