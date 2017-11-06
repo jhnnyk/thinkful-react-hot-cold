@@ -3,6 +3,7 @@ import GuessStatus from './guess-status'
 import GuessForm from './guess-form'
 import GuessCount from './guess-count'
 import GuessHistory from './guess-history'
+import './guess-box.css'
 
 export default class GuessBox extends React.Component {
   constructor (props) {
@@ -15,13 +16,13 @@ export default class GuessBox extends React.Component {
 
   formSubmit (input) {
     this.setState({
-      history: [...this.state.history, {input}]
+      history: [...this.state.history, input]
     })
   }
 
   render () {
     return (
-      <div>
+      <div className='guessbox'>
         <GuessStatus />
         <GuessForm
           handleSubmit={input => this.formSubmit(input)}

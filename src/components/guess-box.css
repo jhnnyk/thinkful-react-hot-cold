@@ -1,0 +1,8 @@
+.guessbox {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  padding: 20px;
+}

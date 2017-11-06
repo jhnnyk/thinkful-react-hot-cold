@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import Title from './title'
 import GuessBox from './guess-box'
 
 class HotorCold extends Component {
   render () {
     return (
-      <div>
-        <Title />
+      <div className='container'>
+        <h1>Hot or Cold</h1>
         <GuessBox />
       </div>
     )
