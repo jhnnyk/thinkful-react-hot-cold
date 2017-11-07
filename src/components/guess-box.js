@@ -10,6 +10,7 @@ export default class GuessBox extends React.Component {
     super(props)
 
     this.state = {
+      theNumber: Math.floor(Math.random() * 100) + 1,
       history: []
     }
   }
@@ -23,10 +24,11 @@ export default class GuessBox extends React.Component {
   render () {
     return (
       <div className='guessbox'>
-        <GuessStatus />
-        <GuessForm
-          handleSubmit={input => this.formSubmit(input)}
+        <GuessStatus
+          correctNum={this.state.theNumber}
+          lastGuess={this.state.history[this.state.history.length - 1]}
         />
+        <GuessForm handleSubmit={input => this.formSubmit(input)} />
         <GuessCount count={this.state.history.length} />
         <GuessHistory history={this.state.history} />
       </div>
