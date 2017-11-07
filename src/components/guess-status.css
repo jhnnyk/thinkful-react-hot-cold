@@ -1,0 +1,26 @@
+h3 {
+  background-color: #bbdefb;
+  color: #757575;
+  margin: 0;
+  padding: 20px;
+}
+
+h3.cold {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+h3.warm {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+h3.hot {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+h3.winner {
+  background-color: #ff4081;
+  color: #fff;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import './guess-form.css'
 
 export default class GuessForm extends React.Component {
   constructor (props) {
@@ -28,7 +29,8 @@ export default class GuessForm extends React.Component {
   render () {
     return (
       <form onSubmit={e => this.onSubmit(e)}>
-        <input type='text'
+        <input type='text' required='true'
+          placeholder='Enter your guess'
           value={this.state.text}
           onChange={e => this.setText(e.target.value)}
         />

@@ -1,4 +1,5 @@
 import React from 'react'
+import './guess-status.css'
 
 export default class GuessStatus extends React.Component {
   render () {

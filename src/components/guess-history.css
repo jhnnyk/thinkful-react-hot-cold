@@ -1,0 +1,12 @@
+.guessHistory {
+  background-color: #bbdefb;
+}
+
+.pastGuess {
+  display: inline-block;
+  background-color: #1976d2;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 5px 20px 5px;
+}
