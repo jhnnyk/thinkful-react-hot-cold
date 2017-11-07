@@ -1,4 +1,5 @@
 import React from 'react'
+import './reset-button.css'
 
 export default class ResetButton extends React.Component {
   render () {

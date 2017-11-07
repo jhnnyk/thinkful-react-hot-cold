@@ -1,0 +1,8 @@
+.resetButton button {
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+  background-color: #2196f3;
+  color: #bdbdbd;
+  border: none;
+}
