@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import GuessBox from './guess-box'
 
-class HotorCold extends Component {
+export default class HotorCold extends React.Component {
   render () {
     return (
       <div className='container'>
@@ -11,5 +11,3 @@ class HotorCold extends Component {
     )
   }
 }
-
-export default HotorCold

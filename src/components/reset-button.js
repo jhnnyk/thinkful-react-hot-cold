@@ -1,0 +1,11 @@
+import React from 'react'
+
+export default class ResetButton extends React.Component {
+  render () {
+    return (
+      <div className='resetButton'>
+        <button onClick={this.props.handleReset}>New Game</button>
+      </div>
+    )
+  }
+}
